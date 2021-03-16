@@ -1,0 +1,9 @@
+/*
+  Created by Peter Boyer (@ptboyer) at Armix.
+  Custom styles to interoperate with Tailwind CSS (tailwindcss.com).
+*/
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
