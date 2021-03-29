@@ -11,7 +11,7 @@
     <link href="tailwind.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="text-gray-900">
     <section id="hero" class="flex text-white h-screen bg-indigo-600">
       <div class="flex flex-col flex-1 mx-auto max-w-lg">
         <div class="flex flex-row items-center justify-center p-4">
@@ -25,10 +25,10 @@
         </div>
         <div class="flex flex-col flex-1 items-center justify-center space-y-6">
           <div class="text-center">
-            <img src="./assets/logo-white.png" alt="Armix" class="w-72" />
+            <img src="./assets/logo-white.png" alt="Armix" class="w-64" />
           </div>
-          <h3 class="text-xl font-sans font-bold">
-            <span class="border-b-2 border-indigo-500"
+          <h3 class="text-lg font-sans font-bold">
+            <span class="border-b-4 border-green-400"
               >Let's build your next masterpiece.</span
             >
           </h3>
@@ -57,7 +57,7 @@
     </section>
     <section id="about">
       <div class="flex flex-col p-8 py-10 mx-auto max-w-lg">
-        <h2 class="text-3xl font-bold">
+        <h2 class="text-3xl font-bold text-gray-800">
           You want to build an awesome digital product and we want to build it
           with you!
         </h2>
@@ -72,7 +72,7 @@
           <a
             href="#contact"
             class="bg-green-500 hover:bg-green-400 text-xl py-3 px-8 text-white rounded shadow-lg font-semibold"
-            >Contact us!</a
+            >Get started!</a
           >
         </div>
       </div>
@@ -165,48 +165,70 @@
         <h1 class="text-2xl font-bold border-b-4 border-indigo-500">
           Past Projects
         </h1>
-      </div>
-    </section>
+        <h2 class="mt-8 text-xl font-semibold">
+          TeleMedic
+          <a
+            class="text-sm border-b-2 border-green-500 text-gray-500"
+            href="https://telemedic.health"
+            >website</a
+          >
+        </h2>
 
-    <section>
-      <div class="flex flex-col p-8 py-10 mx-auto max-w-lg">
-        <h1 class="text-2xl font-bold border-b-4 border-indigo-500">Team</h1>
-        <p class="mt-8 text-xl leading-relaxed">
-          At the moment,
-          <strong class="border-b-2 border-indigo-500">Armix</strong>
-          is a freelancing business run by Peter Boyer.
+        <p class="mt-2">
+          Complete telehealth solution for medical specialists and GPs to
+          consult with remote patients.
         </p>
-        <div class="mt-8 flex flex-row items-center">
-          <img
-            src="./assets/dp-peter-boyer.png"
-            class="rounded-full w-24 mr-4"
-          />
-          <div class="flex flex-1 flex-col">
-            <h1 class="text-3xl font-bold">Peter Boyer</h1>
-            <h2 class="text-xl uppercase">Founder</h2>
-            <span></span>
-          </div>
-        </div>
-        <p class="mt-8 leading-relaxed">
-          <strong class="border-b-2 border-indigo-500"
-            >Peter has over 5 years of software industry experience</strong
-          >, across many small to large scale websites and webapps for many
-          different clients and agencies.
+        <h2 class="mt-8 text-xl font-semibold">
+          Muster
+          <a
+            class="text-sm border-b-2 border-green-500 text-gray-500"
+            href="https://getmuster.com"
+            >website</a
+          >
+        </h2>
+        <p class="mt-2">
+          Website (and in-progress mobile app) for helping friends plan social
+          events in their city.
         </p>
-        <div class="mt-8 flex flex-row items-center">
-          <img src="./assets/dp-shakes.png" class="rounded-full w-24 mr-4" />
-          <div class="flex flex-1 flex-col">
-            <h1 class="text-3xl font-bold">Shakes</h1>
-            <h2 class="text-xl uppercase">Supervisor</h2>
-            <span></span>
-          </div>
-        </div>
-        <p class="mt-8 leading-relaxed">
-          <strong class="border-b-2 border-indigo-500"
-            >Shakes feels like he's been doing this his whole life</strong
-          >, and he has! With over 2 years experience, he is an excellent asset
-          to our team!
+        <h2 class="mt-8 text-xl font-semibold">Small Business Websites</h2>
+        <p class="mt-2">
+          Designed websites for small businesses in counselling, entertainment,
+          and professional services.
         </p>
+        <ul class="mt-4 font-semibold">
+          <li>
+            Garay Counselling
+            <a
+              class="text-sm border-b-2 border-green-500 text-gray-500 ml-2"
+              href="https://garaycounselling.com/"
+              >website</a
+            >
+          </li>
+          <li>
+            Nick Garay
+            <a
+              class="text-sm border-b-2 border-green-500 text-gray-500 ml-2"
+              href="https://nickgaray.com/"
+              >website</a
+            >
+          </li>
+          <li>
+            Stapleton Moore
+            <a
+              class="text-sm border-b-2 border-green-500 text-gray-500 ml-2"
+              href="https://stapletonmoore.com.au/"
+              >website</a
+            >
+          </li>
+          <li>
+            WDC 2021
+            <a
+              class="text-sm border-b-2 border-green-500 text-gray-500 ml-2"
+              href="https://www.world-dental-congress.org/"
+              >website</a
+            >
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -232,6 +254,59 @@
           >
           and ready to start building your next project, no matter how big (or
           small)!
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex flex-col p-8 py-10 mx-auto max-w-lg">
+        <h1 class="text-2xl font-bold border-b-4 border-indigo-500">Team</h1>
+        <p class="mt-8 text-3xl font-bold text-gray-800">
+          <strong class="border-b-2 border-indigo-500">Armix</strong>
+          is currently a freelancing business run by Peter Boyer.
+        </p>
+        <div class="mt-10 flex flex-row items-center">
+          <img
+            src="./assets/dp-peter-boyer.png"
+            class="rounded-full w-24 mr-4"
+          />
+          <div class="flex flex-1 flex-col">
+            <h1 class="text-3xl font-bold">Peter Boyer</h1>
+            <h2 class="text-lg uppercase">Founder</h2>
+            <span
+              ><a
+                class="text-green-500 font-bold border-b-2 border-green-500"
+                href="https://github.com/ptboyer"
+                >GitHub</a
+              >
+              |
+              <a
+                class="text-green-500 font-bold border-b-2 border-green-500"
+                href="https://au.linkedin.com/in/peter-boyer-385733ba"
+                >LinkedIn</a
+              ></span
+            >
+          </div>
+        </div>
+        <p class="mt-6 leading-relaxed">
+          <strong class="border-b-2 border-indigo-500"
+            >Peter has over 5 years of software industry experience</strong
+          >, across many small to large scale websites and webapps for many
+          different clients and agencies.
+        </p>
+        <div class="mt-8 flex flex-row items-center">
+          <img src="./assets/dp-shakes.png" class="rounded-full w-24 mr-4" />
+          <div class="flex flex-1 flex-col">
+            <h1 class="text-3xl font-bold">Shakes</h1>
+            <h2 class="text-lg uppercase">Supervisor</h2>
+            <span></span>
+          </div>
+        </div>
+        <p class="mt-6 leading-relaxed">
+          <strong class="border-b-2 border-indigo-500"
+            >Shakes feels like he's been doing this his whole life</strong
+          >, and he has! With over 2 years experience, he is an excellent asset
+          to our team!
         </p>
       </div>
     </section>
