@@ -1,22 +1,17 @@
 {
   "name": "armix-io",
-  "version": "0.1.0",
-  "main": "index.js",
-  "author": "Peter Boyer <@ptboyer>",
+  "author": "Peter Boyer <@peterboyer>",
   "license": "MIT",
   "private": true,
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "dev": "cd src && reload -b",
-    "clean": "rm -rf dist",
-    "build": "yarn clean && mkdir -p dist && yarn build-src && yarn build-css",
-    "build-src": "cp -r src/* dist",
-    "build-css": "purgecss --config ./purgecss.config.js",
-    "bundle": "yarn build && cp -r info/* dist && yarn bundle-zip",
-    "bundle-zip": "cd dist && zip -r ../bundle.zip *"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "devDependencies": {
-    "purgecss": "^4.0.2",
-    "reload": "^3.1.1",
-    "tailwindcss": "^2.0.3"
+    "parcel": "^2.6.2",
+    "prettier": "^2.7.1",
+    "tailwindcss": "^3.1.4"
   }
 }
